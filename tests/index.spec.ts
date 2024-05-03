@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test('homepage has title and links', async ({ page }) => {
   await page.goto('http://localhost:3000');
 
-  await expect(page).toHaveTitle(/LinkTreeFreeClone/);
+  await expect(page).toHaveTitle(/Grateful Group/);
 
   const twitter = page.getByRole('link', { name: '🐦 Twitter' });
   await expect(twitter).toHaveAttribute('href', 'https://*****');
@@ -21,5 +21,5 @@ test('homepage has title and links', async ({ page }) => {
   await expect(phone).toHaveAttribute('href', 'tel://+40728183110');
 
   const email = page.getByRole('link', { name: '📪 Email me' });
-  await expect(email).toHaveAttribute('href', 'mailto://contact@yoandev.co');
+  await expect(email).toHaveAttribute('href', 'mailto://contact@fluter**');
 });
