@@ -1,0 +1,21 @@
+---
+export interface Props {
+	title: string;
+	tagline: string;
+}
+
+const { title, tagline } = Astro.props;
+---
+
+<footer>
+    <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 md:flex md:items-center md:justify-center lg:px-8">
+        <div class="mt-8 md:order-1 md:mt-0">
+            <p class="text-center text-base text-gray-400">
+                &copy; 2024 DAVERO PROSPER SRL. 
+            </p>
+            <p class="text-center text-base text-gray-400">
+                CP-051856 - Bucharest <a href="https://maps.app.goo.gl/VQ9rESwB35Fd21Lb7" class="text-indigo-600"> Romania </a>
+            </p>
+        </div>
+    </div>
+</footer>
